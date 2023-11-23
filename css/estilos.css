@@ -703,7 +703,7 @@ textarea {
 }
 .sobre .sobre-img img {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 @media (max-width: 900px) {
