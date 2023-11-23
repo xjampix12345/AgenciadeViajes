@@ -1,0 +1,56 @@
+.servicios{
+    h3{
+        text-align: center;
+    }
+    .container p{
+        text-align: center;
+    }
+    .row-cards{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        flex-wrap: wrap;
+        .row-card-item{
+            background-color: #7ECA9C;
+            width: 350px;
+            padding: 20px;
+            border-radius: 14px;
+            margin: 20px;
+        }
+        .row-card-item:hover{
+            background-color: #CCFFBD;
+        }
+        .row-card-item img{
+            background-color: #40394A;
+            border-radius: 14px;
+            width: 70px;
+            padding: 9px;
+        }
+    }
+}
+.datos{
+    background-color: whitesmoke;
+    .container{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .datos-item{
+        text-align: center;
+        margin: 15px;
+        color: #40394A;
+        img{
+            background-color: #7ECA9C;
+            border-radius: 14px;
+            padding: 10px;
+            margin-bottom: 15px;
+            width: 80px;
+        }
+        p{
+            font-size: 18px;
+            strong{
+                font-size: 28px;
+            }
+        }
+    }
+}

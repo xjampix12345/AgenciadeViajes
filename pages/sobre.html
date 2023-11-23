@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre | Despejar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/estilos.css"> 
+</head>
+<body>
+    <body>
+        <header class="nav">
+            <div class="container">
+                <nav>
+                    <a class="logo" href="../index.html">
+                        <img class="imglogo" src="../img/LOGO.png" alt="Logo"></a>
+                    <ul class="menu-desktop">
+                        <a href="../index.html">Inicio</a>
+                        <a href="./precios.html">Precios</a>
+                        <a href="./servicios.html">Servicios</a>
+                        <a href="./sobre.html">Sobre</a>
+                        <a class="btn" href="./contactanos.html">Contactanos</a>
+                    </ul>
+                    <ul class="menu-mobile">
+                        <a href="../index.html">Inicio</a>
+                        <a href="./precios.html">Precios</a>
+                        <a href="./servicios.html">Servicios</a>
+                        <a href="./sobre.html">Sobre</a>
+                        <a class="btn" href="./contactanos.html">Contactanos</a>
+                        <div class="icon-close">
+                            <i class="fa fa-times-circle" aria-hidden="true"></i>
+                        </div>
+                     </ul>
+                     <div class="menu-icon">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                     </div>           
+                </nav>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="sobre">
+                <div class="container">
+                    <div class="sobre-text">
+                        <h3>Sobre Nosotros</h3>
+                        <p>Bienvenido a nuestra agencia de viajes, donde nuestro objetivo es hacer realidad sus sueños de viaje. Somos un equipo de expertos en viajes experimentados y apasionados que se dedican a ayudarlo a planificar el viaje perfecto. Ya sea que esté buscando una escapada relajante a la playa, una aventura al aire libre o una exploración cultural de una nueva ciudad, estamos aquí para ayudarlo a crear recuerdos inolvidables.
+                            <br>
+                            Nuestra agencia fue fundada con el objetivo de brindar servicios de viaje excepcionales a nuestros clientes. Entendemos que viajar puede ser un proceso complejo y desalentador, y nuestra misión es simplificarlo para usted. Ofrecemos una variedad de servicios para garantizar que su viaje transcurra sin estrés, desde reservas de vuelos y hoteles hasta seguros de viaje y asistencia con la visa.
+                            <br>
+                            Nuestro equipo está formado por profesionales con años de experiencia en la industria de viajes. Nos enorgullecemos de nuestro amplio conocimiento de los destinos de todo el mundo, y siempre estamos buscando nuevas y emocionantes oportunidades de viaje. Ya sea que esté buscando unas vacaciones de lujo o una escapada económica, tenemos la experiencia para ayudarlo a planificar el viaje perfecto.</p>
+                    </div>
+                    <div class="sobre-img">
+                        <img src="../img/sobre-nosotros.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+            <footer class="footer">
+                <div class="social-icons">
+                  <a href="https://www.facebook.com/"><i class="fa fa-facebook-square"></i></a>
+                  <a href="https://twitter.com/"><i class="fa fa-twitter-square"></i></a>
+                  <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+                  <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+                </div>
+                <p>&copy; Despejar 2023</p>
+            </footer>
+        </main>
+        <script>
+            var menuIcon = document.querySelector('.menu-icon');
+            var menuMobile = document.querySelector('.menu-mobile');
+            var iconClose = document.querySelector('.menu-mobile .icon-close');
+    
+            menuIcon.addEventListener('click' , function(){
+                menuMobile.classList.add('active');
+            });
+            iconClose.addEventListener('click' , function(){
+                menuMobile.classList.remove('active');
+            });
+        </script>
+    </body>
+</body>
+</html>

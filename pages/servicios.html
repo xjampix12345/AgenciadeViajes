@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios | Despejar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a class="logo" href="../index.html">
+                    <img class="imglogo" src="../img/LOGO.png" alt="Logo"></a>
+                <ul class="menu-desktop">
+                    <a href="../index.html">Inicio</a>
+                    <a href="./precios.html">Precios</a>
+                    <a href="./servicios.html">Servicios</a>
+                    <a href="./sobre.html">Sobre</a>
+                    <a class="btn" href="./contactanos.html">Contactanos</a>
+                </ul>
+                <ul class="menu-mobile">
+                    <a href="../index.html">Inicio</a>
+                    <a href="./precios.html">Precios</a>
+                    <a href="./servicios.html">Servicios</a>
+                    <a href="./sobre.html">Sobre</a>
+                    <a class="btn" href="./contactanos.html">Contactanos</a>
+                    <div class="icon-close">
+                        <i class="fa fa-times-circle" aria-hidden="true"></i>
+                    </div>
+                </ul>
+                <div class="menu-icon">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </nav>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="servicios">
+            <div class="container">
+                <h3>Nuestros servicios</h3>
+                <div class="row-cards">
+                    <div id="card1" class="row-card-item">
+                        <img src="../img/cloud.png" alt="">
+                        <p nombre-servicio><strong>Planificación de itinerarios personalizados</strong></p>
+                        <p class="descripcion">Nuestra agencia de viajes puede crear itinerarios personalizados
+                            adaptados a sus intereses, preferencias y presupuesto únicos.</p>
+                    </div>
+
+
+
+                    <div id="card2" class="row-card-item">
+                        <img src="../img/digital-marketing.png" alt="">
+                        <p nombre-servicio><strong>Arreglos de viajes grupales</strong></p>
+                        <p class="descripcion">Ya sea que esté planeando una reunión familiar, un retiro corporativo o
+                            un viaje escolar, podemos manejar toda la logística para viajes grupales.</p>
+                    </div>
+                    <div id="card3" class="row-card-item">
+                        <img src="../img/seo.png" alt="">
+                        <p nombre-servicio><strong>Seguro de viaje</strong></p>
+                        <p class="descripcion">Proteja su inversión con un seguro de viaje. Ofrecemos una variedad de
+                            opciones, que incluyen seguro de cancelación de viaje, cobertura médica y protección de
+                            equipaje.</p>
+                    </div>
+                    <div id="card4" class="row-card-item">
+                        <img src="../img/virtual_store.png" alt="">
+                        <p nombre-servicio><strong>Reservas de hoteles y resorts</strong></p>
+                        <p class="descripcion">Permítanos ocuparnos de sus necesidades de alojamiento reservando los
+                            mejores hoteles y resorts para usted.</p>
+                    </div>
+                    <div id="card5" class="row-card-item">
+                        <img src="../img/layer.png" alt="">
+                        <p nombre-servicio><strong>Bodas de destino y paquetes de luna de miel</strong></p>
+                        <p class="descripcion">Haga que su día especial sea inolvidable con un destino de boda o paquete
+                            de luna de miel.</p>
+                    </div>
+                    <div id="card6" class="row-card-item">
+                        <img src="../img/manager.png" alt="">
+                        <p nombre-servicio><strong>Asistencia para visas de viaje y pasaportes</strong></p>
+                        <p class="descripcion"> Deje que nuestros expertos lo ayuden a navegar el proceso y se
+                            aseguren de que tiene toda la documentación necesaria para su viaje.</p>
+                    </div>
+
+                    <script>
+                        setInterval(function () {
+                            var cardIds = ['card1', 'card2', 'card3', 'card4', 'card5', 'card6']; // Agrega aquí los IDs de tus cards
+                            for (var i = 0; i < cardIds.length; i++) {
+                                var card = document.getElementById(cardIds[i]);
+                                var randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+                                card.style.backgroundColor = randomColor;
+                            }
+                        }, 1000);
+                    </script>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="datos">
+            <div class="container">
+                <div id="card1.1" class="datos-item">
+                    <img src="../img/cloud.png" alt="">
+                    <p>
+                        <strong>+850</strong><br>
+                        Paquetes de viajes
+                    </p>
+                </div>
+                <div id="card1.2" class="datos-item">
+                    <img src="../img/manager.png" alt="">
+                    <p>
+                        <strong>+9716</strong><br>
+                        Clientes satisfechos
+                    </p>
+                </div>
+                <div id="card1.3" class="datos-item">
+                    <img src="../img/trophy.png" alt="">
+                    <p>
+                        <strong>+231</strong><br>
+                        Títulos Ganados
+                    </p>
+                </div>
+                <div id="card1.4" class="datos-item">
+                    <img src="../img/layer.png" alt="">
+                    <p>
+                        <strong>+598</strong><br>
+                        Planes de descuento
+                    </p>
+                </div>
+            </div>
+        </section>
+        <script src="script.js"></script>
+
+        <!--SI LLEGASE A NECESITAR ESTE CODIGO LO USARE LUEGO-->
+        <!--
+        <script>
+            var cardIds = ['card1.1', 'card1.2', 'card1.3', 'card1.4']; // Agrega aquí los IDs de tus cards
+            var colors = ['#efb810', '#dbdbdb']; // Define los dos colores que deseas usar
+            var colorIndex = 0; // Índice para alternar entre los colores
+        
+            setInterval(function() {
+                for (var i = 0; i < cardIds.length; i++) {
+                    var card = document.getElementById(cardIds[i]);
+                    card.style.backgroundColor = colors[colorIndex];
+                }
+        
+                // Cambia al siguiente color
+                colorIndex = (colorIndex + 1) % colors.length;
+            }, 1000);
+        </script>
+        -->
+
+        <footer class="footer">
+            <div class="social-icons">
+                <a target="_blank" href="https://www.facebook.com/jeanpier.saire"><i class="fa fa-facebook-square"></i></a>
+                <a target="_blank" href="https://twitter.com/"><i class="fa fa-twitter-square"></i></a>
+                <a target="_blank" href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+            </div>
+            <p>&copy; Despejar 2023</p>
+        </footer>
+    </main>
+    <script>
+        var menuIcon = document.querySelector('.menu-icon');
+        var menuMobile = document.querySelector('.menu-mobile');
+        var iconClose = document.querySelector('.menu-mobile .icon-close');
+
+        menuIcon.addEventListener('click', function () {
+            menuMobile.classList.add('active');
+        });
+        iconClose.addEventListener('click', function () {
+            menuMobile.classList.remove('active');
+        });
+    </script>
+</body>
+
+</html>

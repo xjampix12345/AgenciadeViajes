@@ -1,0 +1,80 @@
+/*contactanos*/
+header .banner h1{
+    font-size: 50px;
+}
+form {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+}
+.form-group {
+    margin-bottom: 1rem;
+}
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border-radius: 9px;
+    transition: 0.3s;
+    border: 1px solid #40394A;
+}
+input:focus, textarea:focus{
+    border: 1px solid #7ECA9C;
+}
+textarea {
+    height: 8rem;
+    resize: none;
+}
+.contacto-info{
+    display: flex;
+    margin-top: 50px;
+    padding: 30px;
+    form button{
+        border: none;
+    }
+    .contacto-despejar{
+        width: 50%;
+        padding: 30px;
+        background-color: #7ECA9C;
+        margin-right: 50px;
+        border-radius: 14px;
+        height: fit-content;
+        div{
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }  
+        i{
+            font-size: 24px;
+            margin-right: 20px;
+            color: white;
+        }  
+        p{
+            font-size: 17px;
+            color: #40394A;
+        }
+    }
+}
+@media (max-width: 900px){
+    .contacto .contacto-info{
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 100%;
+        .contacto-despejar{
+            width: 100%;
+            padding: 10px;
+            background-color: #7ECA9C;
+            margin-right: 0;
+            border-radius: 14px;
+            height: fit-content;
+        }
+        .mapa{
+            display: contents;
+        }
+    }
+}

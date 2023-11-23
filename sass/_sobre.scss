@@ -1,0 +1,41 @@
+/*sobre nosotros*/
+.sobre{
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px;
+    }
+    .sobre-text{
+        width: 50%;
+        padding-right: 40px;
+        p{
+            margin: 18px 0;
+            color: black;
+        }
+    }
+    .sobre-img{
+        width: 50%;
+        img{
+            width: 100%;
+            border-radius: 10px;
+        }
+    }
+}
+@media (max-width: 900px){
+    .sobre{
+        .container{
+            flex-direction: column;
+        }
+        .sobre-img,.sobre-text{
+            margin-top: 40px;
+            padding: 10px;
+            width: 100%;
+        }
+    }
+    .comentarios{
+        .card-item{
+            width: 100%;
+        }
+    }
+}

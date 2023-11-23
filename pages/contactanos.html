@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos | Despejar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body>
+
+    <body>
+        <header>
+            <div class="container">
+                <nav>
+                    <a class="logo" href="../index.html">
+                        <img class="imglogo" src="../img/LOGO.png" alt="Logo"></a>
+                    <ul class="menu-desktop">
+                        <a href="../index.html">Inicio</a>
+                        <a href="./precios.html">Precios</a>
+                        <a href="./servicios.html">Servicios</a>
+                        <a href="./sobre.html">Sobre</a>
+                        <a class="btn" href="./contactanos.html">Contactanos</a>
+                    </ul>
+                    <ul class="menu-mobile">
+                        <a href="../index.html">Inicio</a>
+                        <a href="./precios.html">Precios</a>
+                        <a href="./servicios.html">Servicios</a>
+                        <a href="./sobre.html">Sobre</a>
+                        <a class="btn" href="./contactanos.html">Contactanos</a>
+                        <div class="icon-close">
+                            <i class="fa fa-times-circle" aria-hidden="true"></i>
+                        </div>
+                    </ul>
+                    <div class="menu-icon">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </div>
+                </nav>
+                </nav>
+                </section>
+            </div>
+        </header>
+        <main>
+            <section class="contacto">
+                <div class="container">
+                    <div class="form">
+                        <form action="submit-consult.php" method="post">
+                            <h2>Envianos tu consulta por mail</h2>
+                            <div class="form-group">
+                                <label for="name">Nombre completo:</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Mail:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="consult">Consulta:</label>
+                                <textarea id="consult" name="consult" required></textarea>
+                            </div>
+                            <button class="btn">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="contacto-info">
+                        <div class="contacto-despejar">
+                            <div>
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <p>Av. del Libertador 3624, Buenos Aires</p>
+                            </div>
+                            <div>
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                <p>+54 911 54545454</p>
+                            </div>
+                            <div>
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                                <p>despejar@contacto.com</p>
+                            </div>
+                        </div>
+                        <div class="mapa">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6570.451260961266!2d-58.41987499999999!3d-34.573157!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5be8fef7173%3A0xb86dc41b6c6d60ef!2sJardin%20de%20Los%20Poetas!5e0!3m2!1spt-PT!2sar!4v1679010692405!5m2!1spt-PT!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer class="footer">
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/"><i class="fa fa-facebook-square"></i></a>
+                    <a href="https://twitter.com/"><i class="fa fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+                </div>
+                <p>&copy; Despejar 2023</p>
+            </footer>
+        </main>
+        <script>
+            var menuIcon = document.querySelector('.menu-icon');
+            var menuMobile = document.querySelector('.menu-mobile');
+            var iconClose = document.querySelector('.menu-mobile .icon-close');
+
+            menuIcon.addEventListener('click', function () {
+                menuMobile.classList.add('active');
+            });
+            iconClose.addEventListener('click', function () {
+                menuMobile.classList.remove('active');
+            });
+        </script>
+    </body>
+</body>
+
+</html>
